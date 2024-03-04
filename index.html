@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teach Talks</title>
+    <link rel="shortcut icon" href="./icons/corum.png" type="image/x-icon">
+
+
+    <!-- daisy ui play CDN  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+        <!-- kit  -->
+        <script src="https://kit.fontawesome.com/3d5f563f9e.js" crossorigin="anonymous"></script>
+
+<style>
+ :root{
+            --size: 100px;
+            --duration: 3s;
+        }
+
+        .tontainer{
+            width: var(--size);
+            height: var(--size);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative; /* Added this */
+        }
+        .circle {
+            width: 10px;
+            height: 10px;
+            border: 2px solid blue;
+            border-radius: 100%;
+            position: absolute;
+            animation: waves infinite var(--duration) linear;
+        }
+
+        @keyframes waves {
+            0% {
+                width: 10px;
+                height: 10px;
+                opacity: 1;
+            }
+            100% {
+                width: var(--size);
+                height: var(--size);
+                opacity: 0;
+            }
+        }
+
+
+
+
+.mulish{
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.inter {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+
+
+        }
+
+body{
+    user-select: none;
+}
+</style>
+
+
+</head>
+
+<body>
+    <header class="container max-w-4xl pt-5  mx-auto">
+
+
+
+        <!-- navbar section  -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-30  text-[#030712B3] raleway font-medium text-xl">
+                        <li><img src="./icons/house.png" alt=""></li>
+                        <li><img src="./icons/pen.png" alt=""></li>
+                        <li><img src="./icons/user.png" alt=""></li>
+                        <li><img src="./icons/flag.png" alt=""></li>
+                    </ul>
+                </div>
+                <a class="text-xl lg:text-3xl font-extrabold mulish bg-clip-text text-transparent bg-gradient-to-r from-[#7D7DFC] to-green-500">TechTalks</a>
+            </div>
+            
+            <div class="navbar-end gap-4 flex items-center">
+                
+                <div class="bg-[12132D] border border-[#030712] rounded-full hidden lg:block p-2 tooltip tooltip-bottom" data-tip="Home">
+                    <img src="./icons/house.png" alt="">
+                </div>
+                <div class="bg-[12132D] border border-[#030712] rounded-full  hidden lg:block p-2 tooltip tooltip-bottom" data-tip="Edit">
+                    <img src="./icons/pen.png" alt="">
+                </div>
+                <div class="bg-[12132D] border border-[#030712] rounded-full hidden lg:block p-2 tooltip tooltip-bottom" data-tip="Add">
+                    <img src="./icons/user.png" alt="">
+                </div>
+                <div class="bg-[12132D] border border-[#030712] rounded-full hidden lg:block p-2 tooltip tooltip-bottom" data-tip="Report">
+                    <img src="./icons/flag.png" alt="">
+                </div>
+                <div class="bg-[#797DFC] btn px-5 py-2 rounded-2xl">
+                    <button class="mulish  text-white font-bold">Sign In</button>
+                </div>
+            </div>
+        </div>
+        <!-- navbar section  -->
+    </header>
+
+
+    <main class="container max-w-4xl pt-5  mx-auto">
+<!-- banner section  -->
+<section id="truck-image" class="my-5">
+    <div
+        class="flex flex-col lg:flex-row justify-evenly items-center bg-no-repeat rounded-3xl bg-[url(./images/bgbanner.png)] bg-bottom  py-8 gap-20 lg:h-[80vh] lg:gap-32 px-2 lg:px-20 bg-[#12132D]">
+       
+        <!-- welcome  -->
+        <div class="flex flex-col p-3 lg:p-0 gap-5">
+            <h2 class="mulish font-extrabold text-4xl text-white lg:pr-8">Welcome to the  <span class="bg-clip-text text-transparent bg-gradient-to-r from-[#7D7DFC] to-green-500">TechTalks</span> Forum</h2>
+            <p class="mulish text-xl font-medium text-[#FFFFFFCC]">Let's explore the ever-evolving world of technology together! And share your favorite opinion.</p>
+            <!-- <label class="input border-2 input-bordered flex rounded-2xl w-3/4 items-center gap-2">
+                <input id="inputPost" type="text" class="grow" placeholder="Search here anything" />
+                
+              </label> -->
+              <label class="input input-bordered border-2 border-black flex flex-col lg:flex-row items-center gap-2">
+                <input id="inputPost" type="text" class="" placeholder="Search here anything" />
+                <button id="searchButton" class="mulish bg-[#797DFC] px-5 py-2 ml-0 lg:ml-8 btn text-xl hover:bg-red-500 rounded-2xl mt-8 lg:mt-0 text-white font-bold">Search</button>
+              </label>
+        </div>
+
+        <!-- Register  -->
+        <div class="bg-white p-4 flex justify-between items-center  text-xl  space-x-4 gap-5 rounded-xl ">
+
+<div class="mulish font-medium text-[#12132DCC] w-40 flex flex-col">
+    <p>Registered Users</p>
+    <p>Forum</p>
+    <p>Topics</p>
+    <p>Replies</p>
+</div>
+
+<div class="mulish font-medium text-[#12132DCC]  flex flex-col">
+    <p>15</p>
+    <p>41</p>
+    <p>23</p>
+    <p>17</p>
+</div>
+
+        </div>
+
+        
+
+    </div>
+</section>
+<!-- banner section  -->
+
+
+<section class="my-10 mulish space-y-5">
+<h2 class="font-extrabold text-[#12132D] text-3xl text-center">Let’s Discuss</h2>
+<p class="inter font-normal text-[#12132D99] text-xl text-center px-3 lg:px-20">Unveiling the Future of Tech at TechTalks Forum! Your voice matters, so join us as we explore, debate, and innovate together!</p>
+
+<div class="grid grid-cols-1 lg:grid-cols-3 space-y-7 lg:gap-7 relative">
+    
+    <!-- <div id="loading-spinner" class="text-center hidden lg:top-10 left-32 lg:left-80 absolute">
+        <span class="loading loading-spinner loading-lg"></span>
+    </div>  -->
+    <div id="loading-spinner" class="tontainer text-center hidden lg:top-10 left-32 lg:left-80 absolute">
+        <div class="circle"></div>
+        <div class="circle" style="animation-delay:500ms;"></div>
+        <div class="circle" style="animation-delay:1000ms;"></div>
+        <div class="circle" style="animation-delay:1500ms;"></div> <!-- Fixed typo in animation delay -->
+    </div>
+    
+    
+
+    <!-- card -->
+    <div id="postContainer" class="col-span-2 flex flex-col gap-8">
+                 
+
+    </div>
+
+    <!-- title section  -->
+    <div id="mainTitles" class="bg-[#12132D0D] border border-black p-4 rounded-3xl flex flex-col mt-0 hover:bg-black hover:bg-opacity-25  gap-5">
+        <!-- title  -->
+        <div class="flex items-center justify-between">
+            <div class="mulish text-[#12132D] font-bold text-xl"><p>Title</p></div>
+            <div class="flex items-center gap-4">
+                <img src="./icons/right.png" alt="">
+                <p class="text-[##12132D] font-bold text-xs inter">Mark as read ( <span id="markNumber">0</span> )</p>
+            </div>
+            
+        </div>
+
+        <!-- eye box  -->
+        
+        
+    </div>
+</div>
+
+</section>
+
+
+<!-- Join our team section  -->
+<section class="my-10">
+
+    <div class="hero pt-8 rounded-3xl px-4 bg-[#12132D]">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <img src="./images/manwoman.png" />
+          <div class="flex flex-col gap-5 lg:pl-7" >
+            <h1 class="text-3xl mulish text-white font-extrabold">Join Our Forum</h1>
+            <p class="text-[#FFFFFFCC] mulish text-xl font-medium">Join the TechTalks Forum and be part of a dynamic community shaping the future of technology! </p>
+            <button class="btn bg-[#797DFC] px-2 w-3/4 lg:w-2/5 text-xl py-1 mulish rounded-xl text-white">Registered Now</button>
+          </div>
+        </div>
+      </div>
+
+</section>
+
+
+<section class="my-10 mulish space-y-5">
+
+<h2 class="font-extrabold text-[#12132D] text-3xl text-center">Latest Posts</h2>
+<p class="inter font-normal text-[#12132D99] text-xl text-center px-3 lg:px-20">Stay updated with cutting-edge tech trends, insightful discussions, and valuable contributions from our vibrant community. Don't miss out on the opportunity to engage, learn, and share your thoughts!</p>
+
+<!-- cameroon card  -->
+<div id="latestContainer" class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+
+
+
+</div>
+
+
+
+
+
+</section>
+
+    </main>
+
+    <footer class="bg-slate-100 py-8 flex flex-col items-center justify-center gap-7">
+<h1 class="text-xl lg:text-3xl font-extrabold mulish bg-clip-text text-transparent bg-gradient-to-r from-[#7D7DFC] to-green-500">TeachTalks</h1>
+<p class="text-[#12132D99] text-xs mulish
+font-normal text-center w-11/12 lg:w-2/4">Thank you for being part of TechTalks - where learning meets community. Explore, share, and grow with us as we navigate the ever-changing landscape of technology together!</p>
+<img class="cursor-pointer" src="./icons/Social.png" alt="">
+<div class="border border-black opacity-55 border-dashed w-5/6"></div>
+<p class="mulish font-light text-[#12132D80]">2024, All Rights Reserved By TeachTalks</p>
+    </footer>
+
+<script src="latestData.js"></script>
+<script src="index.js"></script>
+
+</body>
+
+</html>
